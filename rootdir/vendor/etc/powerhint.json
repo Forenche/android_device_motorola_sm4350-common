@@ -227,15 +227,6 @@
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
-      "Values": [
-        "2c",
-        "100"
-      ],
-      "HoldFd": true
-    },
-    {
       "Name": "DoubleTap2WakeEnable",
       "Path": "/sys/class/sensors/dt-gesture/enable",
       "Values": [
@@ -338,12 +329,6 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 5000,
-      "Value": "2c"
-    },
-    {
-      "PowerHint": "LAUNCH",
       "Node": "CPUDDRBWHystTriggerCount",
       "Duration": 5000,
       "Value": "0"
@@ -407,12 +392,6 @@
       "Node": "PowerHALRenderingState",
       "Duration": 0,
       "Value": "EXPENSIVE_RENDERING"
-    },
-    {
-      "PowerHint": "ML_ACC",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 2000,
-      "Value": "2c"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",

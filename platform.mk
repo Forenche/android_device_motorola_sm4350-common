@@ -50,6 +50,9 @@ PRODUCT_COPY_FILES += \
     $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(PLATFORM_COMMON_PATH)/rootdir/vendor/etc/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
+
 # Dynamic Partitions
 TARGET_USES_DYNAMIC_PARTITIONS := true
 

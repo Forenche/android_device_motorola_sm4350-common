@@ -120,7 +120,7 @@ PRODUCT_COPY_FILES += \
 
 # Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=27,27
+    ro.telephony.default_network=33,33
 
 $(call inherit-product, device/motorola/common/common.mk)
 $(call inherit-product, vendor/motorola/sm4350-common/sm4350-common-vendor.mk)

@@ -48,6 +48,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6,7
 
+# Device characteristics
+DEVICE_CHARACTERISTICS += ufs
+
 # Dynamic Partitions
 TARGET_USES_DYNAMIC_PARTITIONS := true
 
